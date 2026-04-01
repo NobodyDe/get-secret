@@ -1,7 +1,7 @@
 import { tv } from "tailwind-variants";
 
 export const button = tv({
-  base: "w-full rounded-sm py-1",
+  base: "w-full rounded-sm py-1 cursor-pointer",
   variants: {
     color: {
       white: "bg-foreground text-black hover:bg-zinc-200",

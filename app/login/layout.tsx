@@ -8,7 +8,7 @@ export default function LoginLayout({
 }) {
   return (
     <section className="min-h-screen flex">
-      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-black via-zinc-900 to-black items-center justify-center p-12">
+      <aside className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-black via-zinc-900 to-black items-center justify-center p-12 fixed inset-y-0 left-0">
         <div className="flex flex-col gap-12">
           <div className="flex items-center gap-4">
             <Logo />
@@ -30,9 +30,9 @@ export default function LoginLayout({
             </div>
           </div>
         </div>
-      </div>
-      <main className="flex-1 flex items-center justify-center">
-        <div className="text-center flex flex-col gap-2 max-w-md w-full">
+      </aside>
+      <main className="flex-1 flex items-center justify-center lg:ml-[50%] min-h-screen overflow-y-auto">
+        <div className="text-center flex flex-col gap-2 max-w-md w-full p-6">
           {children}
         </div>
       </main>
