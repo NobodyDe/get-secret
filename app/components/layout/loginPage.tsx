@@ -1,5 +1,5 @@
 import { Lock, Shield } from "lucide-react";
-import { button } from "../styles/button";
+import { button } from "../styles/buttonStyle";
 import { input } from "../styles/input";
 import { typograph } from "../styles/typograph";
 import Logo from "../ui/logo";

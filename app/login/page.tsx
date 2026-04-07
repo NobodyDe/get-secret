@@ -1,77 +1,58 @@
 import Link from "next/link";
-import LoginPage from "../components/layout/loginPage";
 import { typograph } from "../components/styles/typograph";
-import { button } from "../components/styles/button";
 import { input } from "../components/styles/input";
 import Logo from "../components/ui/logo";
+import Text from "../components/ui/Text";
+import Divider from "./_components/Divider";
+import Button from "../components/ui/Button";
+import AuthFooter from "./_components/AuthFooter";
+import { getDictionary } from "../dictionaries";
 
-export default function Page() {
+export default async function Page() {
+  const dict = await getDictionary();
+
   return (
     <div>
       <div className="lg:hidden flex items-center justify-center gap-4 py-8">
         <Logo />
       </div>
-      <span className={typograph({ color: "sub" })}>login</span>
-      <div>
-        <h1 className={typograph({ size: "lg" })}>Create an account</h1>
-        <p className={typograph({ color: "sub" })}>
-          Enter your email below to create your account
-        </p>
+      <Text color="sub">{dict.login.badge}</Text>
+      <div className="flex flex-col">
+        <Text size="lg">Create an account</Text>
+        <Text color="sub">Enter your email below to create your account</Text>
       </div>
       <form className="w-full flex flex-col gap-4 py-4">
         <input
           type="email"
-          placeholder="name@example.com"
+          placeholder={dict.login.emailPlaceholder}
           className={input({})}
           required
         />
 
-        <button type="submit" className={button({ color: "white" })}>
+        <Button type="submit" color="white">
           Sign in with Email
-        </button>
-        <div>
-          <span className="flex items-center gap-4 text-xs uppercase text-zinc-500">
-            <hr className="flex-1 border-zinc-700" />
-            Or continue with
-            <hr className="flex-1 border-zinc-700" />
-          </span>
-        </div>
-        <button className={button({ color: "black" })}>GitHub</button>
+        </Button>
+        <Divider>OR CONTINUE WITH</Divider>
+        <Button type="submit" color="black">
+          GitHub
+        </Button>
       </form>
       <footer className="flex flex-col gap-4">
-        <p className={typograph({ size: "xs", color: "detail" })}>
-          By clicking continue, you are agree to our
-          <a
-            href="#"
-            className={typograph({
-              size: "xs",
-              color: "detail",
-              hover: "white",
-            })}
-          >
+        <Text size="xs" color="detail">
+          By clicking continue, you are agree to our{" "}
+          <Text size="xs" hover="white">
             Terms of Service
-          </a>{" "}
+          </Text>{" "}
           and{" "}
-          <a
-            href="#"
-            className={typograph({
-              size: "xs",
-              color: "detail",
-              hover: "white",
-            })}
-          >
-            Privace Policy
-          </a>
-        </p>
-        <p className={typograph({ size: "xs", color: "detail" })}>
-          Não tem uma conta?{" "}
-          <Link
-            href="/login/create-user"
-            className={typograph({ hover: "white" })}
-          >
-            Criar Conta
-          </Link>
-        </p>
+          <Text size="xs" hover="white">
+            Privacy Policy
+          </Text>
+        </Text>
+        <AuthFooter
+          text="Não tem conta"
+          linkText="Criar Conta"
+          href="/login/create-user"
+        />
       </footer>
     </div>
   );

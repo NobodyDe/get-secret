@@ -1,11 +1,14 @@
 import { Lock, Shield } from "lucide-react";
 import Logo from "../components/ui/logo";
+import { getDictionary } from "../dictionaries";
 
-export default function LoginLayout({
+export default async function LoginLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const dict = await getDictionary();
+
   return (
     <section className="min-h-screen flex">
       <aside className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-black via-zinc-900 to-black items-center justify-center p-12 fixed inset-y-0 left-0">
@@ -17,7 +20,7 @@ export default function LoginLayout({
             <div className="flex items-start gap-3">
               <Shield className="w-5 h-5 mt-0.5" />
               <div>
-                <p className="text-white mb-1">Senha Mestra</p>
+                <p className="text-white mb-1">{dict.sidebar.masterPassword}</p>
                 <p>A chave principal que protege todas as suas senhas</p>
               </div>
             </div>
