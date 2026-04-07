@@ -1,4 +1,6 @@
-import { tv } from "tailwind-variants";
+import { tv, type VariantProps } from "tailwind-variants";
+
+export type TypographVariants = VariantProps<typeof typograph>;
 
 export const typograph = tv({
   base: "text-sm font-medium text-foreground",

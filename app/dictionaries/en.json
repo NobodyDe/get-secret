@@ -1,0 +1,60 @@
+{
+  "login": {
+    "badge": "login",
+    "title": "Sign in to your account",
+    "subtitle": "Enter your email below to sign in",
+    "emailPlaceholder": "name@example.com",
+    "signInWithEmail": "Sign in with Email",
+    "orContinueWith": "OR CONTINUE WITH",
+    "github": "GitHub",
+    "termsText": "By clicking continue, you agree to our",
+    "termsOfService": "Terms of Service",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create Account"
+  },
+  "createUser": {
+    "title": "Create Account",
+    "subtitle": "Set up your profile and master password",
+    "photoLabel": "Photo",
+    "choosePhoto": "Choose profile picture",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "your_username",
+    "emailLabel": "Email",
+    "emailPlaceholder": "name@example.com",
+    "passwordLabel": "Account Password",
+    "confirmPasswordLabel": "Confirm Password",
+    "masterPasswordSection": "MASTER PASSWORD",
+    "masterPasswordNote": "The master password is unique and will decrypt all your saved passwords.",
+    "masterPasswordWarning": "Don't forget it!",
+    "masterPasswordLabel": "Master Password",
+    "confirmMasterLabel": "Confirm Master Password",
+    "acceptTerms": "I accept the",
+    "termsOfService": "Terms of Service",
+    "and": "and the",
+    "privacyPolicy": "Privacy Policy",
+    "submitButton": "Create account",
+    "hasAccount": "Already have an account?",
+    "doLogin": "Sign In"
+  },
+  "password": {
+    "weak": "Weak password",
+    "medium": "Medium password",
+    "strong": "Strong password",
+    "match": "✓ Passwords match",
+    "noMatch": "Passwords don't match",
+    "show": "Show password",
+    "hide": "Hide password"
+  },
+  "sidebar": {
+    "masterPassword": "Master Password",
+    "masterPasswordDesc": "The master key that protects all your passwords",
+    "encryption": "Full Encryption",
+    "encryptionDesc": "Your passwords are protected with state-of-the-art encryption"
+  },
+  "fieldset": {
+    "accountData": "Account data",
+    "masterPassword": "Master Password"
+  }
+}

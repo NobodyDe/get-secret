@@ -1,0 +1,60 @@
+{
+  "login": {
+    "badge": "login",
+    "title": "Entrar na sua conta",
+    "subtitle": "Digite seu email abaixo para entrar",
+    "emailPlaceholder": "nome@exemplo.com",
+    "signInWithEmail": "Entrar com Email",
+    "orContinueWith": "OU CONTINUE COM",
+    "github": "GitHub",
+    "termsText": "Ao clicar em continuar, você concorda com nossos",
+    "termsOfService": "Termos de Serviço",
+    "and": "e",
+    "privacyPolicy": "Política de Privacidade",
+    "noAccount": "Não tem conta?",
+    "createAccount": "Criar Conta"
+  },
+  "createUser": {
+    "title": "Criar Conta",
+    "subtitle": "Configure seu perfil e senha mestra",
+    "photoLabel": "Foto",
+    "choosePhoto": "Escolher foto de perfil",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "seu_username",
+    "emailLabel": "Email",
+    "emailPlaceholder": "nome@exemplo.com",
+    "passwordLabel": "Senha da conta",
+    "confirmPasswordLabel": "Confirmar Senha",
+    "masterPasswordSection": "SENHA MESTRA",
+    "masterPasswordNote": "A senha mestra é única e irá descriptografar todas as suas senhas salvas.",
+    "masterPasswordWarning": "Não a esqueça!",
+    "masterPasswordLabel": "Senha Mestra",
+    "confirmMasterLabel": "Confirmar Senha Mestra",
+    "acceptTerms": "Eu aceito os",
+    "termsOfService": "Termos de Serviço",
+    "and": "e a",
+    "privacyPolicy": "Política de Privacidade",
+    "submitButton": "Criar conta",
+    "hasAccount": "Já tem conta?",
+    "doLogin": "Fazer Login"
+  },
+  "password": {
+    "weak": "Senha fraca",
+    "medium": "Senha média",
+    "strong": "Senha forte",
+    "match": "✓ Senhas coincidem",
+    "noMatch": "As senhas não coincidem",
+    "show": "Mostrar senha",
+    "hide": "Esconder senha"
+  },
+  "sidebar": {
+    "masterPassword": "Senha Mestra",
+    "masterPasswordDesc": "A chave principal que protege todas as suas senhas",
+    "encryption": "Criptografia Total",
+    "encryptionDesc": "Suas senhas são protegidas com criptografia de ponta"
+  },
+  "fieldset": {
+    "accountData": "Dados da conta",
+    "masterPassword": "Senha Mestra"
+  }
+}
